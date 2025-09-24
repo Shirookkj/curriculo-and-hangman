@@ -1,0 +1,174 @@
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #ecf0f1;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.nav {
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 20px;
+}
+
+.backLink {
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.backLink:hover {
+  color: #3498db;
+}
+
+.gameContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 900px;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.gameArea {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 2rem;
+  width: 100%;
+}
+
+.figureContainer {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  justify-content: center;
+}
+
+.hangmanSVG {
+  stroke: #34495e;
+  stroke-width: 4;
+  fill: none;
+  stroke-linecap: round;
+}
+
+.wordContainer {
+  flex: 2;
+  min-width: 300px;
+}
+
+.wordDisplay {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  color: #2c3e50;
+}
+
+.letter {
+  border-bottom: 5px solid #34495e;
+  width: 50px;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.keyboardContainer {
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 800px;
+}
+
+.key {
+  font-size: 1.5rem;
+  padding: 1rem;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.key:hover:not(:disabled) {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+.key.active {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.key.inactive {
+  background-color: #95a5a6;
+  opacity: 0.6;
+}
+
+.key:disabled {
+  cursor: not-allowed;
+}
+
+.gameStatusPopup {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.gameStatusPopup p {
+  font-size: 1.8rem;
+  margin: 0 0 1rem 0;
+}
+
+.gameStatusPopup button {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  background-color: #3498db;
+  transition: background-color 0.2s;
+}
+
+.gameStatusPopup button:hover {
+  background-color: #2980b9;
+}
+
+.winPopup {
+  background-color: rgba(46, 204, 113, 0.1);
+  color: #27ae60;
+}
+
+.losePopup {
+  background-color: rgba(231, 76, 60, 0.1);
+  color: #c0392b;
+}
