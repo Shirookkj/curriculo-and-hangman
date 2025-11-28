@@ -44,14 +44,14 @@ export default function ProjectsScreen() {
         title="Portfólio Web (Next.js)"
         description="Versão web deste currículo, desenvolvida com React, Next.js e CSS Modules. Inclui uma versão web do Jogo da Forca."
         technologies={["React", "Next.js", "CSS Modules"]}
-        link="https://github.com/Shirookkj"
+        link="https://github.com/Shirookkj/curriculo-and-hangman/tree/main/web_version"
       />
 
       <ProjectCard
         title="Portfólio Mobile (App)"
         description="Aplicativo desenvolvido com React Native e Expo para demonstrar habilidades em desenvolvimento móvel híbrido. Utiliza navegação nativa e animações SVG."
         technologies={["React Native", "Expo", "Expo Router", "SVG"]}
-        link="https://github.com/Shirookkj"
+        link="https://github.com/Shirookkj/curriculo-and-hangman/tree/main/mobile_version"
       />
 
       <ProjectCard
