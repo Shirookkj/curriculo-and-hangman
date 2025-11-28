@@ -1,7 +1,5 @@
-import React from "react";
-import { View, Text, StyleSheet, ScrollView } from "react-native";
+import { ScrollView, StyleSheet, Text, View } from "react-native";
 
-// Reutilizando os estilos da tela Home (ou criando um arquivo de estilos global)
 const Section = ({ title, children }) => (
   <View style={styles.section}>
     <Text style={styles.h2}>{title}</Text>
@@ -63,7 +61,6 @@ export default function AboutAppScreen() {
   );
 }
 
-// Estilos (podem ser importados de um arquivo global)
 const styles = StyleSheet.create({
   pageContainer: { flex: 1, backgroundColor: "#f4f7f9" },
   contentContainer: { padding: 20 },

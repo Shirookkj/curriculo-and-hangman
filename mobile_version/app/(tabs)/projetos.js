@@ -1,4 +1,3 @@
-// app/(tabs)/projetos.js
 import {
   Linking,
   ScrollView,

@@ -1,14 +1,12 @@
-import React from "react";
 import {
-  View,
-  Text,
-  StyleSheet,
-  ScrollView,
   Linking,
   Platform,
+  ScrollView,
+  StyleSheet,
+  Text,
+  View,
 } from "react-native";
 
-// Componente reutilizável para seções
 const Section = ({ title, children }) => (
   <View style={styles.section}>
     <Text style={styles.h2}>{title}</Text>
@@ -16,7 +14,6 @@ const Section = ({ title, children }) => (
   </View>
 );
 
-// Componente para habilidades
 const Skill = ({ name }) => (
   <View style={styles.skill}>
     <Text style={styles.skillText}>{name}</Text>
@@ -29,7 +26,6 @@ export default function HomeScreen() {
   };
 
   return (
-    // ScrollView permite rolar a tela
     <ScrollView
       style={styles.pageContainer}
       contentContainerStyle={styles.contentContainer}
@@ -57,9 +53,6 @@ export default function HomeScreen() {
         </Text>
       </Section>
 
-      {/* Você pode criar as outras telas da mesma forma */}
-      {/* Por exemplo, mover Formação e Experiência para 'experiencia.js' */}
-
       <Section title="Formação Acadêmica">
         <Text style={styles.h3}>Bacharelado em Ciência da Computação</Text>
         <Text style={styles.institution}>
@@ -81,14 +74,10 @@ export default function HomeScreen() {
           <Skill name="Expo" />
         </View>
       </Section>
-
-      {/* A CTA para o jogo agora navega para a aba 'jogo' */}
-      {/* A navegação já está na Tab Bar, então podemos remover esta seção ou mudá-la */}
     </ScrollView>
   );
 }
 
-// Estilos inspirados no seu CSS
 const styles = StyleSheet.create({
   pageContainer: {
     flex: 1,
@@ -154,7 +143,6 @@ const styles = StyleSheet.create({
     padding: 20,
     borderRadius: 8,
     marginBottom: 25,
-    // Sombra
     ...Platform.select({
       ios: {
         shadowColor: "rgba(0,0,0, 0.05)",

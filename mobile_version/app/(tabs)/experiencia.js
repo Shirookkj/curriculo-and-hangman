@@ -1,7 +1,5 @@
-// app/(tabs)/experiencia.js
 import { Platform, ScrollView, StyleSheet, Text, View } from "react-native";
 
-// Componente para reutilizar o estilo de seção
 const Section = ({ title, children }) => (
   <View style={styles.section}>
     <Text style={styles.sectionTitle}>{title}</Text>
@@ -9,7 +7,6 @@ const Section = ({ title, children }) => (
   </View>
 );
 
-// Componente para itens de experiência/educação
 const ExperienceItem = ({ role, institution, date, details }) => (
   <View style={styles.itemContainer}>
     <Text style={styles.role}>{role}</Text>
@@ -69,7 +66,6 @@ const styles = StyleSheet.create({
     padding: 20,
     borderRadius: 12,
     marginBottom: 20,
-    // Sombra para iOS e Android
     ...Platform.select({
       ios: {
         shadowColor: "#000",
